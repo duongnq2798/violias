@@ -1,12 +1,12 @@
 ## Install project when git clone
 
--   Open the console and cd your project root directory
--   Run `cp .env.example .env`
--   Run `composer install` or `php composer.phar install`
--   Run `php artisan key:generate`
--   Run `php artisan migrate`
--   Run `php artisan db:seed` to run seeders, if any.
--   Run `php artisan serve`
+- Open the console and cd your project root directory
+- Run `cp .env.example .env`
+- Run `composer install` or `php composer.phar install`
+- Run `php artisan key:generate`
+- Run `php artisan migrate`
+- Run `php artisan db:seed` to run seeders, if any.
+- Run `php artisan serve`
 
 # Process
 
@@ -42,4 +42,21 @@ php artisan make:controller Admin/DashboardController
 php artisan make:controller Author/DashboardController
 php artisan make:middleware AdminMiddleware
 php artisan make:middleware AuthorMiddleware
+```
+
+---
+
+```
+php artisan make:model Tag -m
+```
+
+```
+php artisan make:controller Admin/TagController -r
+-r là --resource
+
+php artisan route:list
+```
+
+```
+composer require brian2694/laravel-toastr
 ```
